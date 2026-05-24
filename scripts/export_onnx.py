@@ -28,13 +28,11 @@ def export(model_path: str, resolution: int = 320, output_path: str = None, veri
 
     # Load
     checkpoint = torch.load(model_path, map_location="cpu", weights_only=False)
-    config = checkpoint.get("config", {})
-
     model = EyeSegmentationModel(
-        encoder=config.get("encoder_name", "resnet34"),
-        num_classes=config.get("num_classes", 3),
+        encoder=checkpoint.get("encoder", "resnet34"),
+        num_classes=checkpoint.get("num_classes", 3),
     )
-    model.load_state_dict(checkpoint["model_state_dict"])
+    model.load_state_dict(checkpoint["state_dict"])
     model.eval()
 
     # Dummy input

@@ -341,84 +341,139 @@ def _parse_project_format(
     return annotations
 
 
+def _parse_ellipse_dict(
+    d: Dict[str, Any],
+) -> Tuple[Optional[List[float]], Optional[List[float]], float]:
+    """Extract (center, axes, angle) from an ellipse sub-dict.
+
+    Supports two annotation styles:
+
+    *Style A* — ``cx``/``cy``/``semi_major``/``semi_minor``/``angle_deg``
+    (written by ``annotate_live_video.py`` in this project)::
+
+        {"cx": 1525.31, "cy": 568.91,
+         "semi_major": 59.29, "semi_minor": 46.77, "angle_deg": 76.13}
+
+    *Style B* — ``center``/``radius``|``axes``/``angle``
+    (legacy / external tools)::
+
+        {"center": [x, y], "axes": [a, b], "angle": 0.0}
+
+    Returns
+    -------
+    center : [x, y] or None
+    axes   : [semi_major, semi_minor] or None
+    angle  : float (degrees)
+    """
+    if not d:
+        return None, None, 0.0
+
+    # ── Style A: cx / cy / semi_major / semi_minor / angle_deg ──
+    if "cx" in d and "cy" in d:
+        center = [float(d["cx"]), float(d["cy"])]
+        sm = d.get("semi_major")
+        sn = d.get("semi_minor")
+        axes = [float(sm), float(sn)] if sm is not None and sn is not None else None
+        angle = float(d.get("angle_deg", d.get("angle", 0)))
+        return center, axes, angle
+
+    # ── Style B: center list / radius or axes ───────────────────
+    center_raw = d.get("center")
+    center = [float(center_raw[0]), float(center_raw[1])] if center_raw is not None else None
+
+    axes_raw = d.get("axes") or d.get("radius")
+    if axes_raw is None:
+        axes = None
+    elif isinstance(axes_raw, (int, float)):
+        axes = [float(axes_raw), float(axes_raw)]
+    else:
+        axes = [float(axes_raw[0]), float(axes_raw[1])]
+
+    angle = float(d.get("angle", d.get("angle_deg", 0)))
+    return center, axes, angle
+
+
 def _parse_flat_format(
     raw: Dict[str, Any], logger
 ) -> Dict[str, Dict[str, Any]]:
-    """Parse a flat {image_id: {pupil_center, ...}} format."""
+    """Parse a flat {image_id: {pupil_center, ...}} format.
+
+    Handles two ellipse sub-formats:
+    - cx/cy/semi_major/semi_minor/angle_deg  (annotate_live_video.py output)
+    - center/axes/angle  (legacy)
+    """
     annotations = {}
     for key, entry in raw.items():
         img_id = Path(key).stem
         ann: Dict[str, Any] = {"image_id": img_id}
 
-        pc = entry.get("pupil_center") or entry.get("pupil", {}).get(
-            "center"
-        )
-        pr = (
-            entry.get("pupil_radius")
-            or entry.get("pupil_axes")
-            or entry.get("pupil", {}).get("radius")
-            or entry.get("pupil", {}).get("axes")
-        )
+        # ── PUPIL ─────────────────────────────────────────────────
+        pupil_dict = entry.get("pupil", {})
+        pc_raw = entry.get("pupil_center")
+        pr_raw = entry.get("pupil_radius") or entry.get("pupil_axes")
 
-        if pc is not None:
-            ann["pupil_center"] = [float(pc[0]), float(pc[1])]
-        if pr is not None:
-            if isinstance(pr, (int, float)):
-                ann["pupil_radius"] = float(pr)
-                ann["pupil_axes"] = [float(pr), float(pr)]
-            else:
-                ann["pupil_axes"] = [float(pr[0]), float(pr[1])]
-                ann["pupil_radius"] = (
-                    float(pr[0]) + float(pr[1])
-                ) / 2.0
-        ann["pupil_angle"] = float(
-            entry.get("pupil_angle", 0)
-            or entry.get("pupil", {}).get("angle", 0)
-        )
+        if pc_raw is not None:
+            # Legacy top-level keys
+            ann["pupil_center"] = [float(pc_raw[0]), float(pc_raw[1])]
+            if pr_raw is not None:
+                if isinstance(pr_raw, (int, float)):
+                    ann["pupil_radius"] = float(pr_raw)
+                    ann["pupil_axes"] = [float(pr_raw), float(pr_raw)]
+                else:
+                    ann["pupil_axes"] = [float(pr_raw[0]), float(pr_raw[1])]
+                    ann["pupil_radius"] = (float(pr_raw[0]) + float(pr_raw[1])) / 2.0
+            ann["pupil_angle"] = float(entry.get("pupil_angle", 0))
+        elif pupil_dict:
+            # Sub-dict style (both Style A and B handled by helper)
+            p_center, p_axes, p_angle = _parse_ellipse_dict(pupil_dict)
+            if p_center is not None:
+                ann["pupil_center"] = p_center
+            if p_axes is not None:
+                ann["pupil_axes"] = p_axes
+                ann["pupil_radius"] = (p_axes[0] + p_axes[1]) / 2.0
+            ann["pupil_angle"] = p_angle
+        else:
+            ann["pupil_angle"] = 0.0
 
-        lc = entry.get("limbus_center") or entry.get(
-            "limbus", {}
-        ).get("center")
-        lr_ = (
-            entry.get("limbus_radius")
-            or entry.get("limbus_axes")
-            or entry.get("limbus", {}).get("radius")
-            or entry.get("limbus", {}).get("axes")
-        )
+        # ── LIMBUS ────────────────────────────────────────────────
+        limbus_dict = entry.get("limbus", {})
+        lc_raw = entry.get("limbus_center")
+        lr_raw = entry.get("limbus_radius") or entry.get("limbus_axes")
 
-        if lc is not None:
-            ann["limbus_center"] = [float(lc[0]), float(lc[1])]
-        if lr_ is not None:
-            if isinstance(lr_, (int, float)):
-                ann["limbus_radius"] = float(lr_)
-                ann["limbus_axes"] = [float(lr_), float(lr_)]
-            else:
-                ann["limbus_axes"] = [float(lr_[0]), float(lr_[1])]
-                ann["limbus_radius"] = (
-                    float(lr_[0]) + float(lr_[1])
-                ) / 2.0
-        ann["limbus_angle"] = float(
-            entry.get("limbus_angle", 0)
-            or entry.get("limbus", {}).get("angle", 0)
-        )
-        ann["has_suction_ring"] = bool(
-            entry.get("has_suction_ring", False)
-        )
+        if lc_raw is not None:
+            # Legacy top-level keys
+            ann["limbus_center"] = [float(lc_raw[0]), float(lc_raw[1])]
+            if lr_raw is not None:
+                if isinstance(lr_raw, (int, float)):
+                    ann["limbus_radius"] = float(lr_raw)
+                    ann["limbus_axes"] = [float(lr_raw), float(lr_raw)]
+                else:
+                    ann["limbus_axes"] = [float(lr_raw[0]), float(lr_raw[1])]
+                    ann["limbus_radius"] = (float(lr_raw[0]) + float(lr_raw[1])) / 2.0
+            ann["limbus_angle"] = float(entry.get("limbus_angle", 0))
+        elif limbus_dict:
+            l_center, l_axes, l_angle = _parse_ellipse_dict(limbus_dict)
+            if l_center is not None:
+                ann["limbus_center"] = l_center
+            if l_axes is not None:
+                ann["limbus_axes"] = l_axes
+                ann["limbus_radius"] = (l_axes[0] + l_axes[1]) / 2.0
+            ann["limbus_angle"] = l_angle
+        else:
+            ann["limbus_angle"] = 0.0
 
-        # ── RING (flat format) ────────────────────────────────
+        ann["has_suction_ring"] = bool(entry.get("has_suction_ring", False))
+
+        # ── RING (flat format) ────────────────────────────────────
         ring_data = entry.get("ring", {})
         if ring_data:
-            rc = ring_data.get("center")
-            rr = ring_data.get("radius") or ring_data.get("axes")
-            if rc is not None:
+            r_center, r_axes, r_angle = _parse_ellipse_dict(ring_data)
+            if r_center is not None:
                 ann["has_suction_ring"] = True
-                ann["ring_center"] = [float(rc[0]), float(rc[1])]
-                if rr is not None:
-                    if isinstance(rr, (int, float)):
-                        ann["ring_axes"] = [float(rr), float(rr)]
-                    else:
-                        ann["ring_axes"] = [float(rr[0]), float(rr[1])]
-                ann["ring_angle"] = float(ring_data.get("angle", 0))
+                ann["ring_center"] = r_center
+                if r_axes is not None:
+                    ann["ring_axes"] = r_axes
+                ann["ring_angle"] = r_angle
 
         annotations[img_id] = ann
 

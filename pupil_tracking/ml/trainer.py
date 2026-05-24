@@ -130,6 +130,8 @@ class Trainer:
         annotation_path: Optional[str] = None,
         image_dir: Optional[str] = None,
         mask_dir: Optional[str] = None,
+        ring_labels_path: Optional[str] = None,
+        loss_kwargs: Optional[dict] = None,
     ) -> None:
         self.cfg = config or get_config()
         self.logger = get_logger()
@@ -160,6 +162,7 @@ class Trainer:
             copies_per_image=tc.augmentations_per_image,
             input_size=mc.input_size,
             num_classes=mc.num_classes,
+            ring_labels_path=ring_labels_path,
         )
 
         safe_workers = _safe_num_workers(tc.num_workers)
@@ -193,9 +196,10 @@ class Trainer:
         ).to(self.device)
 
         # ── loss / optim / scheduler ────────────────────────────
-        self.criterion = CompositeLoss(
-            num_classes=mc.num_classes
-        ).to(self.device)
+        kw = {"num_classes": mc.num_classes}
+        if loss_kwargs:
+            kw.update(loss_kwargs)
+        self.criterion = CompositeLoss(**kw).to(self.device)
 
         self.optimizer = torch.optim.AdamW(
             self.model.parameters(),

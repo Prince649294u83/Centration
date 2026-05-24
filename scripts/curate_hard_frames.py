@@ -30,6 +30,9 @@ import numpy as np
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from pupil_tracking.preprocessing.red_light_filter import RedLightFilter
+from pupil_tracking.core.ring_detector import RingDetector, RingStatus
+
 # Try lazy importing packages
 try:
     from pupil_tracking.ml.onnx_inference import ONNXInference
@@ -57,7 +60,11 @@ def analyze_video(
     subsample: int = 1,
     num_classes: int = 3,
 ) -> List[Dict[str, Any]]:
-    """Scan the video and analyze every N-th frame for segmentation difficulty."""
+    """Scan the video and analyze every N-th frame for key clinical edge cases:
+    - Saturated red lights & specular reflections
+    - Eyelid occlusions & blink boundaries
+    - Limbus overestimation in pre-docking
+    """
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         print(f"[ERROR] Could not open video: {video_path}")
@@ -67,9 +74,14 @@ def analyze_video(
     fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
     print(f"[Curation] Scanning {total_frames} frames from '{Path(video_path).name}'...")
 
+    # Initialize red-light filter and ring detector for active curation scoring
+    red_filter = RedLightFilter(dilation_size=0, enable_inpaint=False)
+    ring_detector = RingDetector()
+
     frame_metadata: List[Dict[str, Any]] = []
     prev_pupil_center: Optional[Tuple[float, float]] = None
     prev_limbus_center: Optional[Tuple[float, float]] = None
+    had_pupil = False
 
     # Determine inference mode (ONNX vs PyTorch)
     is_pytorch = hasattr(infer_engine, "predict_proba")
@@ -173,7 +185,7 @@ def analyze_video(
                     except cv2.error:
                         pass
 
-        # Compute jumps
+        # Compute Jumps
         pupil_jump = 0.0
         if pupil_center and prev_pupil_center:
             pupil_jump = float(math.hypot(pupil_center[0] - prev_pupil_center[0], pupil_center[1] - prev_pupil_center[1]))
@@ -188,30 +200,74 @@ def analyze_video(
         if limbus_center:
             prev_limbus_center = limbus_center
 
-        # Compute curation hardness score
+        # ── Compute targeted active-learning hardness components ──
+        
         # 1. Prediction uncertainty
         conf_term = 1.0 - avg_confidence
-        
-        # 2. Deformed shape (blink / occlusion / squint)
-        shape_term = 0.0
-        if pupil_area > 200:
-            shape_term += (1.0 - pupil_ar)
-        if limbus_area > 500:
-            shape_term += (1.0 - limbus_ar)
-        shape_term = min(shape_term, 1.5) / 1.5
 
-        # 3. Motion jump
-        jump_term = min(max(pupil_jump, limbus_jump), 100.0) / 100.0
+        # 2. Blink / Squint detection (onset/offset of blinks or partial blinks)
+        blink_score = 0.0
+        has_pupil = pupil_center is not None
+        if has_pupil != had_pupil:
+            # High priority for blink transitions
+            blink_score = 1.0
+        elif has_pupil and pupil_ar < 0.65 and pupil_area > 100:
+            # Squint/partial blink
+            blink_score = (0.75 - pupil_ar) / 0.75
+        had_pupil = has_pupil
 
-        # Weighted composite score
-        hardness = 0.4 * conf_term + 0.4 * shape_term + 0.2 * jump_term
+        # 3. Red surgical light blinking / Specular reflections (Fast Downscaled morphology)
+        red_score = 0.0
+        try:
+            # Downscale frame for rapid classical preprocessing metrics
+            small_frame = cv2.resize(frame, (512, 512), interpolation=cv2.INTER_AREA)
+            red_mask = red_filter._detect_red_lights(small_frame)
+            red_pixel_frac = float(np.count_nonzero(red_mask)) / float(512 * 512)
+            # Scale so that 2% active red distractor pixels gives a maximum score of 1.0
+            red_score = min(red_pixel_frac * 50.0, 1.0)
+        except Exception:
+            pass
 
-        # Flag partial blinks / zero detection
+        # 4. Pre-docking limbus overestimation / Concentricity violations
+        overest_score = 0.0
+        try:
+            ring_res = ring_detector.detect(frame)
+            is_docked = ring_res.status in (RingStatus.PRESENT, RingStatus.PARTIAL)
+            if not is_docked and pupil_center and limbus_center:
+                dx = pupil_center[0] - limbus_center[0]
+                dy = pupil_center[1] - limbus_center[1]
+                dist = math.hypot(dx, dy)
+                
+                p_radius = math.sqrt(pupil_area / math.pi) if pupil_area > 0 else 0
+                l_radius = math.sqrt(limbus_area / math.pi) if limbus_area > 0 else 0
+                
+                # Check for biological concentricity and size anomaly
+                is_offset_too_large = l_radius > 0 and (dist / l_radius > 0.35)
+                is_ratio_bad = l_radius > 0 and (p_radius / l_radius < 0.15 or p_radius / l_radius > 0.75)
+                is_too_large = l_radius > 150.0
+                
+                if is_offset_too_large or is_ratio_bad or is_too_large:
+                    overest_score = 1.0
+        except Exception:
+            pass
+
+        # Weighted composite score targeting specific failures
+        hardness = (
+            0.15 * conf_term + 
+            0.35 * red_score + 
+            0.25 * blink_score + 
+            0.25 * overest_score
+        )
+
+        # Flag complete loss of detection as standard high-difficulty score
         is_loss = False
         if pupil_area == 0 or limbus_area == 0:
             is_loss = True
-            # Let loss represent standard high-difficulty score
-            hardness = 0.85
+            # Zero detection frames are important if the eye is open
+            hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+            val_variance = float(np.var(hsv[:, :, 2]))
+            if val_variance > 100.0:  # Eye is likely open, but model failed
+                hardness = max(hardness, 0.85)
 
         frame_metadata.append({
             "frame_index": frame_idx,
@@ -355,8 +411,20 @@ def main():
         print("        Ensure 'models/onnx/segmentation_quantized.onnx' or 'models/best_model.pth' exists.")
         sys.exit(1)
 
+    # Calculate adaptive subsampling factor dynamically if default (1) is passed
+    subsample_factor = args.subsample
+    if subsample_factor == 1:
+        cap = cv2.VideoCapture(video_path)
+        if cap.isOpened():
+            total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+            cap.release()
+            # Target exactly ~800 processed frames to keep curation under 15-20 seconds
+            subsample_factor = max(1, total_frames // 800)
+            print(f"[Curation] Automatically set subsample factor to {subsample_factor} to target ~800 processed frames for rapid curation.")
+            print("           To process every single frame, pass `-s 1` explicitly.")
+
     # ── Analyze and curate ─────────────────────────────────────────
-    metadata = analyze_video(video_path, infer_engine, subsample=args.subsample, num_classes=args.num_classes)
+    metadata = analyze_video(video_path, infer_engine, subsample=subsample_factor, num_classes=args.num_classes)
     
     # Select diverse hardest keyframes using temporal NMS (30 frames spacing = 1 sec at 30 fps)
     curated_indices = select_diverse_keyframes(metadata, num_frames=args.num_frames, nms_threshold=30)

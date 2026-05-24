@@ -1283,6 +1283,38 @@ class UnifiedDetector:
 
         limbus_fit = self._fitter.fit(iris_mask, gray_image)
 
+        # Validate pre-docking limbus concentricity and radius ratio
+        if (
+            not is_docked
+            and pupil_fit is not None
+            and pupil_fit.valid
+            and limbus_fit is not None
+            and limbus_fit.valid
+        ):
+            dx = pupil_fit.center_x - limbus_fit.center_x
+            dy = pupil_fit.center_y - limbus_fit.center_y
+            dist = math.hypot(dx, dy)
+            if limbus_fit.radius > 0:
+                offset_ratio = dist / limbus_fit.radius
+                if offset_ratio > ANATOMICAL_LIMITS.MAX_CENTER_OFFSET_RATIO:
+                    self.logger.debug(
+                        "Pre-docking limbus fit rejected: center offset "
+                        f"{offset_ratio:.2f} > {ANATOMICAL_LIMITS.MAX_CENTER_OFFSET_RATIO}"
+                    )
+                    limbus_fit = None
+
+            if limbus_fit is not None and limbus_fit.radius > 0:
+                ratio = pupil_fit.radius / limbus_fit.radius
+                if (
+                    ratio < ANATOMICAL_LIMITS.MIN_PUPIL_LIMBUS_RATIO
+                    or ratio > ANATOMICAL_LIMITS.MAX_PUPIL_LIMBUS_RATIO
+                ):
+                    self.logger.debug(
+                        "Pre-docking limbus fit rejected: radius ratio "
+                        f"{ratio:.2f} out of bounds"
+                    )
+                    limbus_fit = None
+
         # Validate limbus is inside ring
         if (
             limbus_fit is not None
@@ -2066,6 +2098,35 @@ class _ONNXEngineWrapper:
         self.available = onnx_engine.is_loaded
         self.model_path = None  # No .pth path for ONNX
 
+        # Core preprocessors to clean image of reflections/red lights
+        from pupil_tracking.preprocessing.reflection_removal import ReflectionRemover
+        from pupil_tracking.preprocessing.suction_ring_masker import SuctionRingMasker
+
+        self._reflection_remover = ReflectionRemover(
+            brightness_threshold=220,
+            min_reflection_area=15,
+            inpaint_radius=5,
+            detect_red_highlights=True,
+            red_threshold_offset=20,
+        )
+        self._ring_masker = SuctionRingMasker()
+        self._red_light_filter = None  # Lazy initialization
+        self._red_light_enabled = True
+        self._red_light_temporal_mode = True
+
+    def _get_red_light_filter(self):
+        """Lazy import and return red light filter."""
+        from pupil_tracking.preprocessing.red_light_filter import RedLightFilter
+
+        return RedLightFilter(
+            red_threshold=200,
+            dominance_offset=30,
+            min_area=5,
+            enable_inpaint=True,
+            inpaint_radius=3,
+            enable_temporal=self._red_light_temporal_mode,
+        )
+
     def detect(
         self,
         image: np.ndarray,
@@ -2077,7 +2138,22 @@ class _ONNXEngineWrapper:
         Run ONNX inference and return an EyeDetectionResult
         with _raw_mask attached for SmartContourFitter.
         """
-        masks = self._engine.infer(image)
+        # Apply identical preprocessing before ONNX inference
+        clean_bgr = image
+        if self._ring_masker is not None:
+            clean_bgr, _ = self._ring_masker.remove(clean_bgr)
+        if self._reflection_remover is not None:
+            clean_bgr, _ = self._reflection_remover.remove(clean_bgr)
+
+        if self._red_light_enabled:
+            if self._red_light_filter is None:
+                self._red_light_filter = self._get_red_light_filter()
+            if self._red_light_filter is not None:
+                clean_bgr, _ = self._red_light_filter.apply(
+                    clean_bgr, frame_number=frame_number
+                )
+
+        masks = self._engine.infer(clean_bgr)
 
         # Build an EyeDetectionResult with raw mask for downstream fitting
         result = EyeDetectionResult()
@@ -2114,16 +2190,34 @@ class _ONNXEngineWrapper:
         return result
 
     def set_red_light_filter_enabled(self, enabled: bool) -> None:
-        """No-op for ONNX backend (handled in preprocessing)."""
-        pass
+        """Enable or disable red light filtering."""
+        self._red_light_enabled = enabled
+        if enabled:
+            self._red_light_filter = self._get_red_light_filter()
+        else:
+            from pupil_tracking.preprocessing.red_light_filter import RedLightFilter
+            self._red_light_filter = RedLightFilter(
+                red_threshold=255,
+                dominance_offset=1000,
+                min_area=100000,
+                enable_inpaint=False,
+                enable_temporal=False,
+            )
 
     def set_red_light_temporal_mode(self, enabled: bool) -> None:
-        """No-op for ONNX backend."""
-        pass
+        """Enable temporal mode for red light filtering (for video)."""
+        self._red_light_temporal_mode = enabled
+        if self._red_light_filter is None:
+            self._red_light_filter = self._get_red_light_filter()
+        if self._red_light_filter is not None:
+            self._red_light_filter.enable_temporal = enabled
+            if not enabled:
+                self._red_light_filter.reset_temporal()
 
     def reset_red_light_temporal(self) -> None:
-        """No-op for ONNX backend."""
-        pass
+        """Reset temporal tracking state for red light filter."""
+        if self._red_light_filter is not None:
+            self._red_light_filter.reset_temporal()
 
     def get_device_info(self) -> dict:
         return self._engine.get_device_info()

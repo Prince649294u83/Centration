@@ -1,0 +1,3477 @@
+{
+  "frame_000049.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000049.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1525.31,
+        "center_y": 568.91,
+        "semi_major": 59.29,
+        "semi_minor": 46.77,
+        "angle_deg": 76.13,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1508.84,
+        "center_y": 569.98,
+        "semi_major": 288.12,
+        "semi_minor": 288.12,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000085.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000085.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1521.11,
+        "center_y": 574.08,
+        "semi_major": 56.9,
+        "semi_minor": 48.59,
+        "angle_deg": 102.31,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1504.77,
+        "center_y": 575.58,
+        "semi_major": 298.05,
+        "semi_minor": 292.62,
+        "angle_deg": 124.78,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001159.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001159.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1453.54,
+        "center_y": 604.77,
+        "semi_major": 122.0,
+        "semi_minor": 107.7,
+        "angle_deg": 108.22,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1426.56,
+        "center_y": 585.32,
+        "semi_major": 314.4,
+        "semi_minor": 313.54,
+        "angle_deg": 138.72,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001211.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001211.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1451.62,
+        "center_y": 605.84,
+        "semi_major": 123.63,
+        "semi_minor": 109.5,
+        "angle_deg": 104.42,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1426.75,
+        "center_y": 585.3,
+        "semi_major": 314.33,
+        "semi_minor": 313.59,
+        "angle_deg": 145.71,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001410.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001410.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1451.82,
+        "center_y": 607.96,
+        "semi_major": 130.96,
+        "semi_minor": 116.91,
+        "angle_deg": 97.41,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1426.25,
+        "center_y": 585.21,
+        "semi_major": 314.12,
+        "semi_minor": 313.9,
+        "angle_deg": 93.58,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001445.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001445.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1453.72,
+        "center_y": 607.06,
+        "semi_major": 126.55,
+        "semi_minor": 112.15,
+        "angle_deg": 99.11,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1426.13,
+        "center_y": 585.55,
+        "semi_major": 314.3,
+        "semi_minor": 314.06,
+        "angle_deg": 139.86,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001535.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001535.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1453.1,
+        "center_y": 608.29,
+        "semi_major": 130.66,
+        "semi_minor": 113.65,
+        "angle_deg": 101.23,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1425.53,
+        "center_y": 584.91,
+        "semi_major": 314.13,
+        "semi_minor": 312.35,
+        "angle_deg": 122.47,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001688.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001688.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1452.14,
+        "center_y": 606.11,
+        "semi_major": 129.95,
+        "semi_minor": 117.77,
+        "angle_deg": 106.43,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1425.81,
+        "center_y": 583.17,
+        "semi_major": 315.25,
+        "semi_minor": 310.86,
+        "angle_deg": 165.29,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001915.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001915.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1449.57,
+        "center_y": 606.11,
+        "semi_major": 125.12,
+        "semi_minor": 110.33,
+        "angle_deg": 104.49,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1425.24,
+        "center_y": 581.92,
+        "semi_major": 313.95,
+        "semi_minor": 309.72,
+        "angle_deg": 160.59,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_002448.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_002448.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1450.64,
+        "center_y": 606.03,
+        "semi_major": 126.11,
+        "semi_minor": 112.89,
+        "angle_deg": 105.68,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1426.36,
+        "center_y": 583.5,
+        "semi_major": 314.53,
+        "semi_minor": 311.64,
+        "angle_deg": 178.52,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_002687.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_002687.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1447.9,
+        "center_y": 609.52,
+        "semi_major": 127.8,
+        "semi_minor": 113.47,
+        "angle_deg": 107.31,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1426.28,
+        "center_y": 584.06,
+        "semi_major": 314.04,
+        "semi_minor": 311.93,
+        "angle_deg": 179.64,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_002995.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_002995.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1447.25,
+        "center_y": 608.74,
+        "semi_major": 128.51,
+        "semi_minor": 108.86,
+        "angle_deg": 95.41,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1423.72,
+        "center_y": 581.11,
+        "semi_major": 312.99,
+        "semi_minor": 308.76,
+        "angle_deg": 145.35,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_003353.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_003353.jpg",
+    "image_width": 1920,
+    "image_height": 1080,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 1453.0,
+        "center_y": 607.05,
+        "semi_major": 124.47,
+        "semi_minor": 113.46,
+        "angle_deg": 95.2,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 1425.66,
+        "center_y": 585.86,
+        "semi_major": 314.6,
+        "semi_minor": 312.37,
+        "angle_deg": 92.02,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000032.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000032.jpg",
+    "image_width": 896,
+    "image_height": 820,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 417.14,
+        "center_y": 478.06,
+        "semi_major": 145.28,
+        "semi_minor": 136.17,
+        "angle_deg": 123.91,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 429.38,
+        "center_y": 471.73,
+        "semi_major": 360.15,
+        "semi_minor": 317.89,
+        "angle_deg": 116.56,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000124.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000124.jpg",
+    "image_width": 896,
+    "image_height": 820,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 416.25,
+        "center_y": 481.14,
+        "semi_major": 143.29,
+        "semi_minor": 136.09,
+        "angle_deg": 93.71,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 431.31,
+        "center_y": 459.73,
+        "semi_major": 338.95,
+        "semi_minor": 323.22,
+        "angle_deg": 124.24,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000197.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000197.jpg",
+    "image_width": 896,
+    "image_height": 820,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 416.88,
+        "center_y": 479.11,
+        "semi_major": 141.76,
+        "semi_minor": 141.76,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 439.41,
+        "center_y": 470.53,
+        "semi_major": 353.5,
+        "semi_minor": 324.74,
+        "angle_deg": 113.34,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000031.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000031.jpg",
+    "image_width": 1132,
+    "image_height": 1098,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 605.92,
+        "center_y": 474.95,
+        "semi_major": 80.28,
+        "semi_minor": 80.28,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 624.21,
+        "center_y": 469.77,
+        "semi_major": 310.61,
+        "semi_minor": 310.61,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000097.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000097.jpg",
+    "image_width": 1132,
+    "image_height": 1098,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 474.4,
+        "center_y": 480.28,
+        "semi_major": 84.09,
+        "semi_minor": 84.09,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 489.85,
+        "center_y": 471.97,
+        "semi_major": 317.77,
+        "semi_minor": 317.77,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001050.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001050.jpg",
+    "image_width": 1132,
+    "image_height": 1098,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 576.78,
+        "center_y": 545.95,
+        "semi_major": 168.05,
+        "semi_minor": 155.36,
+        "angle_deg": 89.24,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 592.75,
+        "center_y": 539.66,
+        "semi_major": 413.62,
+        "semi_minor": 393.28,
+        "angle_deg": 95.74,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001667.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001667.jpg",
+    "image_width": 1132,
+    "image_height": 1098,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 570.64,
+        "center_y": 548.71,
+        "semi_major": 173.56,
+        "semi_minor": 165.02,
+        "angle_deg": 93.23,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 579.8,
+        "center_y": 547.1,
+        "semi_major": 423.03,
+        "semi_minor": 403.03,
+        "angle_deg": 108.98,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_002042.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_002042.jpg",
+    "image_width": 1132,
+    "image_height": 1098,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 569.6,
+        "center_y": 557.9,
+        "semi_major": 162.49,
+        "semi_minor": 162.49,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 597.92,
+        "center_y": 527.24,
+        "semi_major": 391.36,
+        "semi_minor": 391.36,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000131.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000131.jpg",
+    "image_width": 1118,
+    "image_height": 1110,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 557.85,
+        "center_y": 597.49,
+        "semi_major": 103.57,
+        "semi_minor": 98.86,
+        "angle_deg": 117.16,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 544.05,
+        "center_y": 585.27,
+        "semi_major": 394.02,
+        "semi_minor": 392.11,
+        "angle_deg": 170.75,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000205.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000205.jpg",
+    "image_width": 1118,
+    "image_height": 1110,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 530.41,
+        "center_y": 594.67,
+        "semi_major": 89.92,
+        "semi_minor": 85.23,
+        "angle_deg": 69.54,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 519.82,
+        "center_y": 584.76,
+        "semi_major": 390.81,
+        "semi_minor": 390.81,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000795.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000795.jpg",
+    "image_width": 1118,
+    "image_height": 1110,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 582.78,
+        "center_y": 554.56,
+        "semi_major": 147.85,
+        "semi_minor": 137.42,
+        "angle_deg": 51.67,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 561.85,
+        "center_y": 530.54,
+        "semi_major": 402.88,
+        "semi_minor": 384.59,
+        "angle_deg": 139.21,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001547.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001547.jpg",
+    "image_width": 1118,
+    "image_height": 1110,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 584.03,
+        "center_y": 558.63,
+        "semi_major": 146.49,
+        "semi_minor": 137.19,
+        "angle_deg": 87.21,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 565.57,
+        "center_y": 528.0,
+        "semi_major": 396.06,
+        "semi_minor": 385.98,
+        "angle_deg": 148.69,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001750.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001750.jpg",
+    "image_width": 1118,
+    "image_height": 1110,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 585.12,
+        "center_y": 554.54,
+        "semi_major": 149.28,
+        "semi_minor": 142.52,
+        "angle_deg": 110.12,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 563.02,
+        "center_y": 535.04,
+        "semi_major": 400.01,
+        "semi_minor": 391.51,
+        "angle_deg": 118.55,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000117.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000117.jpg",
+    "image_width": 1122,
+    "image_height": 1106,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 596.73,
+        "center_y": 721.43,
+        "semi_major": 74.73,
+        "semi_minor": 67.24,
+        "angle_deg": 69.85,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 590.34,
+        "center_y": 711.31,
+        "semi_major": 319.14,
+        "semi_minor": 319.14,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000926.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000926.jpg",
+    "image_width": 1122,
+    "image_height": 1106,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 568.92,
+        "center_y": 588.53,
+        "semi_major": 146.57,
+        "semi_minor": 136.62,
+        "angle_deg": 66.34,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 577.87,
+        "center_y": 567.03,
+        "semi_major": 396.87,
+        "semi_minor": 378.96,
+        "angle_deg": 102.35,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001076.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001076.jpg",
+    "image_width": 1122,
+    "image_height": 1106,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 576.06,
+        "center_y": 592.02,
+        "semi_major": 152.54,
+        "semi_minor": 140.68,
+        "angle_deg": 77.09,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 585.08,
+        "center_y": 566.53,
+        "semi_major": 398.13,
+        "semi_minor": 385.23,
+        "angle_deg": 101.14,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001279.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001279.jpg",
+    "image_width": 1122,
+    "image_height": 1106,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 577.53,
+        "center_y": 594.81,
+        "semi_major": 153.86,
+        "semi_minor": 140.13,
+        "angle_deg": 82.97,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 589.33,
+        "center_y": 572.49,
+        "semi_major": 407.25,
+        "semi_minor": 380.56,
+        "angle_deg": 99.51,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001882.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001882.jpg",
+    "image_width": 1122,
+    "image_height": 1106,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 577.74,
+        "center_y": 600.84,
+        "semi_major": 156.34,
+        "semi_minor": 140.0,
+        "angle_deg": 82.41,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 592.44,
+        "center_y": 575.04,
+        "semi_major": 409.0,
+        "semi_minor": 376.39,
+        "angle_deg": 103.2,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_002039.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_002039.jpg",
+    "image_width": 1122,
+    "image_height": 1106,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 574.76,
+        "center_y": 602.0,
+        "semi_major": 155.04,
+        "semi_minor": 143.27,
+        "angle_deg": 100.47,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 599.11,
+        "center_y": 570.72,
+        "semi_major": 405.04,
+        "semi_minor": 373.49,
+        "angle_deg": 95.99,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000047.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000047.jpg",
+    "image_width": 1106,
+    "image_height": 1116,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 666.14,
+        "center_y": 539.6,
+        "semi_major": 64.98,
+        "semi_minor": 64.98,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 645.58,
+        "center_y": 540.7,
+        "semi_major": 336.34,
+        "semi_minor": 335.5,
+        "angle_deg": 40.82,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000743.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000743.jpg",
+    "image_width": 1106,
+    "image_height": 1116,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 582.86,
+        "center_y": 579.77,
+        "semi_major": 148.82,
+        "semi_minor": 135.58,
+        "angle_deg": 96.17,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 564.46,
+        "center_y": 556.57,
+        "semi_major": 403.92,
+        "semi_minor": 385.75,
+        "angle_deg": 104.64,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000844.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000844.jpg",
+    "image_width": 1106,
+    "image_height": 1116,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 582.08,
+        "center_y": 582.64,
+        "semi_major": 148.64,
+        "semi_minor": 129.27,
+        "angle_deg": 98.93,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 564.91,
+        "center_y": 559.71,
+        "semi_major": 409.57,
+        "semi_minor": 382.91,
+        "angle_deg": 101.66,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001025.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001025.jpg",
+    "image_width": 1106,
+    "image_height": 1116,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 579.84,
+        "center_y": 581.16,
+        "semi_major": 148.01,
+        "semi_minor": 132.46,
+        "angle_deg": 91.77,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 561.65,
+        "center_y": 559.26,
+        "semi_major": 404.24,
+        "semi_minor": 382.46,
+        "angle_deg": 110.81,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001131.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001131.jpg",
+    "image_width": 1106,
+    "image_height": 1116,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 581.38,
+        "center_y": 580.64,
+        "semi_major": 145.11,
+        "semi_minor": 129.28,
+        "angle_deg": 95.51,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 560.57,
+        "center_y": 552.83,
+        "semi_major": 388.96,
+        "semi_minor": 388.96,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001611.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001611.jpg",
+    "image_width": 1106,
+    "image_height": 1116,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 587.77,
+        "center_y": 594.62,
+        "semi_major": 152.16,
+        "semi_minor": 129.15,
+        "angle_deg": 94.17,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 563.21,
+        "center_y": 558.16,
+        "semi_major": 405.17,
+        "semi_minor": 381.45,
+        "angle_deg": 99.62,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001162.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001162.jpg",
+    "image_width": 1112,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 578.77,
+        "center_y": 558.86,
+        "semi_major": 150.85,
+        "semi_minor": 150.85,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 581.7,
+        "center_y": 546.15,
+        "semi_major": 396.93,
+        "semi_minor": 376.71,
+        "angle_deg": 135.24,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001433.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001433.jpg",
+    "image_width": 1112,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 577.11,
+        "center_y": 558.32,
+        "semi_major": 149.03,
+        "semi_minor": 146.45,
+        "angle_deg": 46.37,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 577.04,
+        "center_y": 542.06,
+        "semi_major": 397.59,
+        "semi_minor": 374.45,
+        "angle_deg": 138.41,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001961.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001961.jpg",
+    "image_width": 1112,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 579.12,
+        "center_y": 564.71,
+        "semi_major": 157.7,
+        "semi_minor": 146.45,
+        "angle_deg": 82.99,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 582.18,
+        "center_y": 544.25,
+        "semi_major": 399.97,
+        "semi_minor": 373.4,
+        "angle_deg": 140.38,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_002171.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_002171.jpg",
+    "image_width": 1112,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 579.2,
+        "center_y": 565.66,
+        "semi_major": 156.0,
+        "semi_minor": 147.36,
+        "angle_deg": 103.86,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 581.61,
+        "center_y": 544.96,
+        "semi_major": 407.05,
+        "semi_minor": 375.31,
+        "angle_deg": 141.48,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000025.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000025.jpg",
+    "image_width": 1122,
+    "image_height": 1114,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 584.94,
+        "center_y": 584.43,
+        "semi_major": 78.69,
+        "semi_minor": 74.47,
+        "angle_deg": 6.22,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 566.98,
+        "center_y": 566.97,
+        "semi_major": 321.89,
+        "semi_minor": 314.13,
+        "angle_deg": 38.47,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000169.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000169.jpg",
+    "image_width": 1122,
+    "image_height": 1114,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 544.7,
+        "center_y": 560.17,
+        "semi_major": 83.56,
+        "semi_minor": 74.96,
+        "angle_deg": 120.55,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 522.79,
+        "center_y": 547.0,
+        "semi_major": 316.54,
+        "semi_minor": 306.81,
+        "angle_deg": 66.54,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000224.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000224.jpg",
+    "image_width": 1122,
+    "image_height": 1114,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 547.2,
+        "center_y": 551.93,
+        "semi_major": 90.93,
+        "semi_minor": 84.25,
+        "angle_deg": 20.09,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 528.31,
+        "center_y": 541.74,
+        "semi_major": 316.5,
+        "semi_minor": 305.36,
+        "angle_deg": 67.69,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000353.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000353.jpg",
+    "image_width": 1122,
+    "image_height": 1114,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 542.1,
+        "center_y": 553.93,
+        "semi_major": 88.47,
+        "semi_minor": 87.36,
+        "angle_deg": 93.62,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 527.14,
+        "center_y": 537.77,
+        "semi_major": 307.58,
+        "semi_minor": 307.58,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001083.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001083.jpg",
+    "image_width": 1122,
+    "image_height": 1114,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.8,
+        "center_y": 511.14,
+        "semi_major": 81.15,
+        "semi_minor": 75.75,
+        "angle_deg": 76.02,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 517.65,
+        "center_y": 503.31,
+        "semi_major": 301.91,
+        "semi_minor": 288.35,
+        "angle_deg": 41.54,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_002910.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_002910.jpg",
+    "image_width": 1122,
+    "image_height": 1114,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 588.3,
+        "center_y": 583.51,
+        "semi_major": 134.59,
+        "semi_minor": 129.68,
+        "angle_deg": 53.52,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 560.18,
+        "center_y": 552.98,
+        "semi_major": 415.33,
+        "semi_minor": 409.24,
+        "angle_deg": 84.84,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_003305.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_003305.jpg",
+    "image_width": 1122,
+    "image_height": 1114,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 587.04,
+        "center_y": 579.55,
+        "semi_major": 137.78,
+        "semi_minor": 123.02,
+        "angle_deg": 46.74,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 570.35,
+        "center_y": 553.86,
+        "semi_major": 413.56,
+        "semi_minor": 401.1,
+        "angle_deg": 104.23,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000022.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000022.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 572.88,
+        "center_y": 589.58,
+        "semi_major": 66.28,
+        "semi_minor": 66.28,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 557.66,
+        "center_y": 567.28,
+        "semi_major": 290.12,
+        "semi_minor": 273.79,
+        "angle_deg": 10.56,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000046.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000046.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 586.52,
+        "center_y": 594.64,
+        "semi_major": 63.78,
+        "semi_minor": 60.32,
+        "angle_deg": 143.98,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 567.46,
+        "center_y": 572.08,
+        "semi_major": 289.37,
+        "semi_minor": 272.09,
+        "angle_deg": 24.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000113.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000113.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 564.12,
+        "center_y": 566.83,
+        "semi_major": 68.27,
+        "semi_minor": 61.66,
+        "angle_deg": 45.06,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 546.33,
+        "center_y": 543.64,
+        "semi_major": 292.15,
+        "semi_minor": 271.22,
+        "angle_deg": 16.23,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000196.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000196.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 573.83,
+        "center_y": 559.37,
+        "semi_major": 71.87,
+        "semi_minor": 65.91,
+        "angle_deg": 39.28,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 555.68,
+        "center_y": 539.0,
+        "semi_major": 291.16,
+        "semi_minor": 274.63,
+        "angle_deg": 15.93,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000255.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000255.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 573.85,
+        "center_y": 567.27,
+        "semi_major": 65.66,
+        "semi_minor": 58.07,
+        "angle_deg": 13.81,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 560.06,
+        "center_y": 547.92,
+        "semi_major": 293.59,
+        "semi_minor": 273.0,
+        "angle_deg": 18.79,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000401.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000401.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 575.82,
+        "center_y": 561.32,
+        "semi_major": 70.63,
+        "semi_minor": 65.68,
+        "angle_deg": 50.11,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 558.01,
+        "center_y": 539.18,
+        "semi_major": 292.25,
+        "semi_minor": 276.28,
+        "angle_deg": 16.54,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000473.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000473.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 571.42,
+        "center_y": 562.59,
+        "semi_major": 63.74,
+        "semi_minor": 63.74,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 557.02,
+        "center_y": 540.99,
+        "semi_major": 298.37,
+        "semi_minor": 277.58,
+        "angle_deg": 11.79,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000759.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000759.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 556.88,
+        "center_y": 518.81,
+        "semi_major": 75.85,
+        "semi_minor": 66.31,
+        "angle_deg": 176.1,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 538.66,
+        "center_y": 497.31,
+        "semi_major": 292.37,
+        "semi_minor": 271.31,
+        "angle_deg": 179.88,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_003040.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_003040.jpg",
+    "image_width": 1112,
+    "image_height": 1122,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 567.15,
+        "center_y": 572.1,
+        "semi_major": 135.25,
+        "semi_minor": 135.25,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 549.46,
+        "center_y": 541.54,
+        "semi_major": 401.81,
+        "semi_minor": 389.81,
+        "angle_deg": 168.28,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000028.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000028.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 537.54,
+        "center_y": 576.69,
+        "semi_major": 60.95,
+        "semi_minor": 55.36,
+        "angle_deg": 26.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 559.37,
+        "center_y": 567.33,
+        "semi_major": 282.29,
+        "semi_minor": 282.29,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000066.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000066.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.78,
+        "center_y": 573.11,
+        "semi_major": 56.6,
+        "semi_minor": 56.6,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 551.09,
+        "center_y": 562.1,
+        "semi_major": 279.24,
+        "semi_minor": 279.24,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000084.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000084.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 536.04,
+        "center_y": 578.28,
+        "semi_major": 62.05,
+        "semi_minor": 55.23,
+        "angle_deg": 27.15,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 555.84,
+        "center_y": 569.34,
+        "semi_major": 283.46,
+        "semi_minor": 283.46,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000096.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000096.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.01,
+        "center_y": 583.15,
+        "semi_major": 57.92,
+        "semi_minor": 57.92,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 545.52,
+        "center_y": 568.39,
+        "semi_major": 280.8,
+        "semi_minor": 280.8,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000114.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000114.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 535.09,
+        "center_y": 574.51,
+        "semi_major": 62.53,
+        "semi_minor": 57.76,
+        "angle_deg": 41.54,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 547.58,
+        "center_y": 564.73,
+        "semi_major": 288.78,
+        "semi_minor": 286.42,
+        "angle_deg": 166.9,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000232.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000232.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 567.99,
+        "center_y": 594.63,
+        "semi_major": 63.56,
+        "semi_minor": 61.33,
+        "angle_deg": 14.29,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 580.56,
+        "center_y": 585.86,
+        "semi_major": 280.28,
+        "semi_minor": 280.28,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000292.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000292.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 570.31,
+        "center_y": 582.13,
+        "semi_major": 63.39,
+        "semi_minor": 57.99,
+        "angle_deg": 156.68,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 584.79,
+        "center_y": 574.46,
+        "semi_major": 282.84,
+        "semi_minor": 279.07,
+        "angle_deg": 55.04,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000355.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000355.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 599.71,
+        "center_y": 578.44,
+        "semi_major": 56.47,
+        "semi_minor": 56.47,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 604.97,
+        "center_y": 576.05,
+        "semi_major": 275.55,
+        "semi_minor": 275.55,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000492.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000492.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 562.14,
+        "center_y": 601.1,
+        "semi_major": 62.26,
+        "semi_minor": 56.79,
+        "angle_deg": 28.62,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 574.52,
+        "center_y": 592.69,
+        "semi_major": 283.81,
+        "semi_minor": 283.81,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000543.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000543.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 499.0,
+        "center_y": 605.01,
+        "semi_major": 61.17,
+        "semi_minor": 53.99,
+        "angle_deg": 58.46,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 512.98,
+        "center_y": 603.57,
+        "semi_major": 281.72,
+        "semi_minor": 281.72,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000008.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000008.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 516.98,
+        "center_y": 563.64,
+        "semi_major": 67.1,
+        "semi_minor": 66.05,
+        "angle_deg": 133.68,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 537.2,
+        "center_y": 546.52,
+        "semi_major": 289.49,
+        "semi_minor": 289.49,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000024.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000024.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 547.51,
+        "center_y": 566.04,
+        "semi_major": 72.01,
+        "semi_minor": 65.51,
+        "angle_deg": 22.6,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 566.87,
+        "center_y": 560.1,
+        "semi_major": 297.32,
+        "semi_minor": 291.41,
+        "angle_deg": 85.43,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000042.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000042.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 557.73,
+        "center_y": 574.06,
+        "semi_major": 69.85,
+        "semi_minor": 63.35,
+        "angle_deg": 168.83,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 576.41,
+        "center_y": 556.81,
+        "semi_major": 288.05,
+        "semi_minor": 283.73,
+        "angle_deg": 57.61,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000063.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000063.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 579.04,
+        "center_y": 557.85,
+        "semi_major": 70.45,
+        "semi_minor": 63.95,
+        "angle_deg": 177.37,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 605.35,
+        "center_y": 544.55,
+        "semi_major": 285.92,
+        "semi_minor": 285.92,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000125.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000125.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 550.25,
+        "center_y": 552.03,
+        "semi_major": 71.95,
+        "semi_minor": 66.24,
+        "angle_deg": 172.24,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 573.85,
+        "center_y": 531.23,
+        "semi_major": 286.91,
+        "semi_minor": 286.91,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000161.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000161.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 549.04,
+        "center_y": 547.43,
+        "semi_major": 73.15,
+        "semi_minor": 65.24,
+        "angle_deg": 167.3,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 566.73,
+        "center_y": 530.7,
+        "semi_major": 294.31,
+        "semi_minor": 290.64,
+        "angle_deg": 19.21,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000210.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000210.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 547.54,
+        "center_y": 559.13,
+        "semi_major": 73.91,
+        "semi_minor": 65.34,
+        "angle_deg": 15.71,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 563.5,
+        "center_y": 546.55,
+        "semi_major": 294.25,
+        "semi_minor": 289.55,
+        "angle_deg": 29.71,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000223.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000223.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 543.94,
+        "center_y": 553.14,
+        "semi_major": 74.25,
+        "semi_minor": 65.64,
+        "angle_deg": 178.96,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 569.52,
+        "center_y": 540.08,
+        "semi_major": 291.19,
+        "semi_minor": 291.19,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000268.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000268.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 538.6,
+        "center_y": 565.76,
+        "semi_major": 70.78,
+        "semi_minor": 62.87,
+        "angle_deg": 5.74,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 563.6,
+        "center_y": 552.78,
+        "semi_major": 291.39,
+        "semi_minor": 291.39,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000286.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000286.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 545.75,
+        "center_y": 554.17,
+        "semi_major": 73.4,
+        "semi_minor": 70.31,
+        "angle_deg": 176.4,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 559.28,
+        "center_y": 538.26,
+        "semi_major": 290.64,
+        "semi_minor": 290.64,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000307.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000307.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 544.81,
+        "center_y": 548.61,
+        "semi_major": 78.68,
+        "semi_minor": 70.23,
+        "angle_deg": 6.99,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 557.37,
+        "center_y": 536.47,
+        "semi_major": 293.67,
+        "semi_minor": 288.54,
+        "angle_deg": 35.76,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000365.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000365.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 543.67,
+        "center_y": 539.68,
+        "semi_major": 69.15,
+        "semi_minor": 66.23,
+        "angle_deg": 172.33,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 558.97,
+        "center_y": 524.07,
+        "semi_major": 290.52,
+        "semi_minor": 290.52,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000513.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000513.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 533.95,
+        "center_y": 639.25,
+        "semi_major": 72.79,
+        "semi_minor": 64.48,
+        "angle_deg": 152.38,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 550.78,
+        "center_y": 624.71,
+        "semi_major": 294.96,
+        "semi_minor": 291.77,
+        "angle_deg": 20.94,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000565.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000565.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 539.82,
+        "center_y": 604.59,
+        "semi_major": 75.67,
+        "semi_minor": 67.29,
+        "angle_deg": 153.01,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 559.42,
+        "center_y": 591.47,
+        "semi_major": 298.13,
+        "semi_minor": 287.89,
+        "angle_deg": 61.55,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000686.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000686.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 544.76,
+        "center_y": 650.87,
+        "semi_major": 64.6,
+        "semi_minor": 64.6,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 559.9,
+        "center_y": 631.75,
+        "semi_major": 293.55,
+        "semi_minor": 280.78,
+        "angle_deg": 4.01,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000731.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000731.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 554.28,
+        "center_y": 572.36,
+        "semi_major": 71.94,
+        "semi_minor": 65.12,
+        "angle_deg": 4.3,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 575.09,
+        "center_y": 556.22,
+        "semi_major": 290.01,
+        "semi_minor": 287.81,
+        "angle_deg": 115.82,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000765.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000765.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 560.91,
+        "center_y": 585.28,
+        "semi_major": 71.94,
+        "semi_minor": 65.04,
+        "angle_deg": 170.68,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 579.0,
+        "center_y": 577.17,
+        "semi_major": 293.97,
+        "semi_minor": 293.97,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000807.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000807.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 551.64,
+        "center_y": 597.46,
+        "semi_major": 71.75,
+        "semi_minor": 64.33,
+        "angle_deg": 174.01,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 575.89,
+        "center_y": 581.3,
+        "semi_major": 291.14,
+        "semi_minor": 291.14,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000859.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000859.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 555.82,
+        "center_y": 600.69,
+        "semi_major": 69.72,
+        "semi_minor": 64.35,
+        "angle_deg": 20.16,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 572.1,
+        "center_y": 586.28,
+        "semi_major": 292.22,
+        "semi_minor": 292.22,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001262.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001262.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 504.64,
+        "center_y": 626.82,
+        "semi_major": 80.28,
+        "semi_minor": 68.03,
+        "angle_deg": 12.09,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 521.36,
+        "center_y": 609.11,
+        "semi_major": 288.67,
+        "semi_minor": 277.69,
+        "angle_deg": 38.47,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001344.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001344.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 485.47,
+        "center_y": 643.58,
+        "semi_major": 89.18,
+        "semi_minor": 79.86,
+        "angle_deg": 26.29,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 496.08,
+        "center_y": 631.04,
+        "semi_major": 283.69,
+        "semi_minor": 278.08,
+        "angle_deg": 105.77,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001440.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001440.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 465.13,
+        "center_y": 691.42,
+        "semi_major": 99.85,
+        "semi_minor": 94.44,
+        "angle_deg": 49.08,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 478.49,
+        "center_y": 665.93,
+        "semi_major": 284.35,
+        "semi_minor": 284.35,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_001578.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_001578.jpg",
+    "image_width": 1118,
+    "image_height": 1124,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 507.24,
+        "center_y": 620.65,
+        "semi_major": 99.22,
+        "semi_minor": 91.61,
+        "angle_deg": 36.09,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 529.22,
+        "center_y": 598.91,
+        "semi_major": 310.6,
+        "semi_minor": 310.6,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000033.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000033.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.78,
+        "center_y": 573.64,
+        "semi_major": 61.97,
+        "semi_minor": 56.3,
+        "angle_deg": 21.38,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 548.15,
+        "center_y": 565.28,
+        "semi_major": 282.02,
+        "semi_minor": 282.02,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000039.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000039.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 536.25,
+        "center_y": 571.65,
+        "semi_major": 60.67,
+        "semi_minor": 56.24,
+        "angle_deg": 17.74,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 557.2,
+        "center_y": 551.86,
+        "semi_major": 275.7,
+        "semi_minor": 275.7,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000043.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000043.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.06,
+        "center_y": 572.05,
+        "semi_major": 58.76,
+        "semi_minor": 55.92,
+        "angle_deg": 36.96,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 546.99,
+        "center_y": 562.3,
+        "semi_major": 279.01,
+        "semi_minor": 279.01,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000050.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000050.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 533.39,
+        "center_y": 568.76,
+        "semi_major": 58.97,
+        "semi_minor": 56.4,
+        "angle_deg": 38.49,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 547.87,
+        "center_y": 561.65,
+        "semi_major": 282.25,
+        "semi_minor": 282.25,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000054.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000054.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 532.61,
+        "center_y": 567.59,
+        "semi_major": 57.26,
+        "semi_minor": 55.18,
+        "angle_deg": 37.15,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 555.03,
+        "center_y": 558.04,
+        "semi_major": 278.9,
+        "semi_minor": 278.9,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000055.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000055.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 531.69,
+        "center_y": 567.56,
+        "semi_major": 60.22,
+        "semi_minor": 53.64,
+        "angle_deg": 21.37,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 546.7,
+        "center_y": 556.99,
+        "semi_major": 285.96,
+        "semi_minor": 278.52,
+        "angle_deg": 44.57,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000056.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000056.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.26,
+        "center_y": 566.72,
+        "semi_major": 57.79,
+        "semi_minor": 54.94,
+        "angle_deg": 30.27,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 543.39,
+        "center_y": 556.92,
+        "semi_major": 290.25,
+        "semi_minor": 275.13,
+        "angle_deg": 6.72,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000060.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000060.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 535.34,
+        "center_y": 569.09,
+        "semi_major": 59.82,
+        "semi_minor": 58.33,
+        "angle_deg": 178.18,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 543.69,
+        "center_y": 559.87,
+        "semi_major": 288.82,
+        "semi_minor": 276.0,
+        "angle_deg": 155.54,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000061.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000061.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 532.81,
+        "center_y": 568.14,
+        "semi_major": 62.6,
+        "semi_minor": 59.24,
+        "angle_deg": 42.96,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 548.75,
+        "center_y": 559.04,
+        "semi_major": 284.04,
+        "semi_minor": 284.04,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000062.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000062.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 527.03,
+        "center_y": 571.3,
+        "semi_major": 59.95,
+        "semi_minor": 57.13,
+        "angle_deg": 169.69,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 543.31,
+        "center_y": 559.08,
+        "semi_major": 285.37,
+        "semi_minor": 281.63,
+        "angle_deg": 3.3,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000067.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000067.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 530.66,
+        "center_y": 574.79,
+        "semi_major": 62.09,
+        "semi_minor": 55.2,
+        "angle_deg": 46.62,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 546.21,
+        "center_y": 568.55,
+        "semi_major": 282.35,
+        "semi_minor": 281.1,
+        "angle_deg": 175.69,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000068.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000068.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 532.69,
+        "center_y": 571.66,
+        "semi_major": 58.54,
+        "semi_minor": 56.79,
+        "angle_deg": 163.12,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 540.93,
+        "center_y": 565.83,
+        "semi_major": 282.44,
+        "semi_minor": 282.44,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000072.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000072.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 538.27,
+        "center_y": 574.31,
+        "semi_major": 60.84,
+        "semi_minor": 55.74,
+        "angle_deg": 16.63,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 547.84,
+        "center_y": 567.08,
+        "semi_major": 287.26,
+        "semi_minor": 287.26,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000073.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000073.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 542.54,
+        "center_y": 576.32,
+        "semi_major": 62.17,
+        "semi_minor": 54.03,
+        "angle_deg": 30.3,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 547.48,
+        "center_y": 568.13,
+        "semi_major": 281.9,
+        "semi_minor": 281.9,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000074.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000074.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 539.34,
+        "center_y": 574.18,
+        "semi_major": 56.55,
+        "semi_minor": 56.55,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 554.08,
+        "center_y": 567.74,
+        "semi_major": 284.96,
+        "semi_minor": 284.96,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000078.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000078.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 537.87,
+        "center_y": 576.74,
+        "semi_major": 60.64,
+        "semi_minor": 58.16,
+        "angle_deg": 23.59,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 556.29,
+        "center_y": 569.2,
+        "semi_major": 286.07,
+        "semi_minor": 286.07,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000080.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000080.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.49,
+        "center_y": 576.82,
+        "semi_major": 63.41,
+        "semi_minor": 54.61,
+        "angle_deg": 17.01,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 552.95,
+        "center_y": 567.71,
+        "semi_major": 284.94,
+        "semi_minor": 284.94,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000086.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000086.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.19,
+        "center_y": 578.74,
+        "semi_major": 59.38,
+        "semi_minor": 58.96,
+        "angle_deg": 96.18,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 545.6,
+        "center_y": 572.77,
+        "semi_major": 291.49,
+        "semi_minor": 287.88,
+        "angle_deg": 67.61,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000090.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000090.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 533.65,
+        "center_y": 582.45,
+        "semi_major": 59.47,
+        "semi_minor": 59.47,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 549.87,
+        "center_y": 569.79,
+        "semi_major": 289.95,
+        "semi_minor": 280.13,
+        "angle_deg": 114.38,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000091.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000091.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 535.67,
+        "center_y": 583.76,
+        "semi_major": 62.18,
+        "semi_minor": 54.41,
+        "angle_deg": 15.39,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 549.94,
+        "center_y": 573.97,
+        "semi_major": 287.52,
+        "semi_minor": 278.37,
+        "angle_deg": 76.83,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000092.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000092.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 535.77,
+        "center_y": 579.04,
+        "semi_major": 61.24,
+        "semi_minor": 52.15,
+        "angle_deg": 10.55,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 549.64,
+        "center_y": 572.09,
+        "semi_major": 284.69,
+        "semi_minor": 279.8,
+        "angle_deg": 91.74,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000098.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000098.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 532.06,
+        "center_y": 579.92,
+        "semi_major": 61.11,
+        "semi_minor": 58.34,
+        "angle_deg": 139.86,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 550.25,
+        "center_y": 571.34,
+        "semi_major": 290.15,
+        "semi_minor": 290.15,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000103.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000103.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 544.42,
+        "center_y": 571.01,
+        "semi_major": 66.88,
+        "semi_minor": 57.76,
+        "angle_deg": 28.13,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 555.75,
+        "center_y": 560.43,
+        "semi_major": 290.27,
+        "semi_minor": 286.64,
+        "angle_deg": 47.67,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000104.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000104.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 544.53,
+        "center_y": 571.12,
+        "semi_major": 64.97,
+        "semi_minor": 58.97,
+        "angle_deg": 179.64,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 560.15,
+        "center_y": 559.47,
+        "semi_major": 286.59,
+        "semi_minor": 282.95,
+        "angle_deg": 23.83,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000110.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000110.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 535.71,
+        "center_y": 566.69,
+        "semi_major": 63.49,
+        "semi_minor": 57.19,
+        "angle_deg": 11.64,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 551.84,
+        "center_y": 561.61,
+        "semi_major": 281.21,
+        "semi_minor": 281.21,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000115.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000115.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 531.69,
+        "center_y": 571.73,
+        "semi_major": 59.94,
+        "semi_minor": 57.29,
+        "angle_deg": 84.35,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 549.09,
+        "center_y": 562.89,
+        "semi_major": 289.55,
+        "semi_minor": 281.08,
+        "angle_deg": 65.71,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000121.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000121.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 532.53,
+        "center_y": 569.96,
+        "semi_major": 61.55,
+        "semi_minor": 59.14,
+        "angle_deg": 36.54,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 548.65,
+        "center_y": 556.94,
+        "semi_major": 292.65,
+        "semi_minor": 288.75,
+        "angle_deg": 151.6,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000122.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000122.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.08,
+        "center_y": 568.06,
+        "semi_major": 60.01,
+        "semi_minor": 60.01,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 548.88,
+        "center_y": 556.67,
+        "semi_major": 286.92,
+        "semi_minor": 286.92,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000126.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000126.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 530.66,
+        "center_y": 566.71,
+        "semi_major": 60.04,
+        "semi_minor": 53.06,
+        "angle_deg": 31.2,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 544.69,
+        "center_y": 554.54,
+        "semi_major": 282.74,
+        "semi_minor": 282.74,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000127.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000127.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 534.77,
+        "center_y": 562.67,
+        "semi_major": 59.96,
+        "semi_minor": 56.72,
+        "angle_deg": 153.15,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 552.58,
+        "center_y": 552.45,
+        "semi_major": 291.13,
+        "semi_minor": 276.22,
+        "angle_deg": 42.99,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000128.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000128.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 529.05,
+        "center_y": 567.14,
+        "semi_major": 65.67,
+        "semi_minor": 58.63,
+        "angle_deg": 49.47,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 548.36,
+        "center_y": 555.1,
+        "semi_major": 285.92,
+        "semi_minor": 285.92,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000174.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000174.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 575.66,
+        "center_y": 558.0,
+        "semi_major": 63.45,
+        "semi_minor": 59.42,
+        "angle_deg": 6.84,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 586.14,
+        "center_y": 550.5,
+        "semi_major": 267.57,
+        "semi_minor": 263.63,
+        "angle_deg": 41.48,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000175.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000175.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 579.19,
+        "center_y": 558.46,
+        "semi_major": 64.61,
+        "semi_minor": 58.53,
+        "angle_deg": 7.97,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 590.6,
+        "center_y": 552.02,
+        "semi_major": 277.41,
+        "semi_minor": 268.13,
+        "angle_deg": 172.97,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000176.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000176.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 588.56,
+        "center_y": 558.75,
+        "semi_major": 65.88,
+        "semi_minor": 57.78,
+        "angle_deg": 164.81,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 603.16,
+        "center_y": 548.96,
+        "semi_major": 272.64,
+        "semi_minor": 272.64,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000181.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000181.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 587.09,
+        "center_y": 559.1,
+        "semi_major": 66.74,
+        "semi_minor": 58.96,
+        "angle_deg": 18.58,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 603.35,
+        "center_y": 551.02,
+        "semi_major": 273.56,
+        "semi_minor": 273.56,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000186.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000186.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 576.72,
+        "center_y": 567.44,
+        "semi_major": 66.83,
+        "semi_minor": 58.24,
+        "angle_deg": 21.47,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 591.9,
+        "center_y": 550.71,
+        "semi_major": 278.17,
+        "semi_minor": 272.28,
+        "angle_deg": 98.4,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000188.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000188.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 587.29,
+        "center_y": 570.02,
+        "semi_major": 68.54,
+        "semi_minor": 62.64,
+        "angle_deg": 132.01,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 594.42,
+        "center_y": 553.88,
+        "semi_major": 276.6,
+        "semi_minor": 276.6,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000228.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000228.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 569.34,
+        "center_y": 595.57,
+        "semi_major": 66.38,
+        "semi_minor": 59.03,
+        "angle_deg": 13.94,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 581.62,
+        "center_y": 587.06,
+        "semi_major": 281.14,
+        "semi_minor": 270.99,
+        "angle_deg": 49.09,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000230.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000230.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 573.84,
+        "center_y": 595.69,
+        "semi_major": 67.66,
+        "semi_minor": 60.32,
+        "angle_deg": 170.39,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 581.18,
+        "center_y": 587.48,
+        "semi_major": 287.09,
+        "semi_minor": 273.72,
+        "angle_deg": 173.78,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000234.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000234.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 581.8,
+        "center_y": 583.72,
+        "semi_major": 62.84,
+        "semi_minor": 60.87,
+        "angle_deg": 72.4,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 589.45,
+        "center_y": 574.71,
+        "semi_major": 278.97,
+        "semi_minor": 278.97,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000235.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000235.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 579.46,
+        "center_y": 577.53,
+        "semi_major": 63.45,
+        "semi_minor": 59.46,
+        "angle_deg": 25.23,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 594.8,
+        "center_y": 574.11,
+        "semi_major": 281.47,
+        "semi_minor": 271.52,
+        "angle_deg": 175.29,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000242.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000242.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 592.4,
+        "center_y": 567.45,
+        "semi_major": 68.45,
+        "semi_minor": 56.87,
+        "angle_deg": 178.08,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 606.05,
+        "center_y": 565.41,
+        "semi_major": 281.16,
+        "semi_minor": 274.08,
+        "angle_deg": 25.66,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000248.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000248.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 593.36,
+        "center_y": 563.52,
+        "semi_major": 63.87,
+        "semi_minor": 56.59,
+        "angle_deg": 31.08,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 611.79,
+        "center_y": 550.31,
+        "semi_major": 277.39,
+        "semi_minor": 265.04,
+        "angle_deg": 45.12,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000254.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000254.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 596.25,
+        "center_y": 562.19,
+        "semi_major": 69.3,
+        "semi_minor": 56.22,
+        "angle_deg": 15.06,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 615.31,
+        "center_y": 550.33,
+        "semi_major": 281.59,
+        "semi_minor": 274.64,
+        "angle_deg": 48.9,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000259.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000259.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 600.0,
+        "center_y": 567.58,
+        "semi_major": 62.87,
+        "semi_minor": 56.63,
+        "angle_deg": 11.74,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 619.37,
+        "center_y": 558.43,
+        "semi_major": 282.12,
+        "semi_minor": 268.26,
+        "angle_deg": 61.27,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000260.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000260.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 600.35,
+        "center_y": 566.39,
+        "semi_major": 62.43,
+        "semi_minor": 61.18,
+        "angle_deg": 7.37,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 613.08,
+        "center_y": 556.31,
+        "semi_major": 278.3,
+        "semi_minor": 273.57,
+        "angle_deg": 169.7,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000265.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000265.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 597.69,
+        "center_y": 570.04,
+        "semi_major": 64.14,
+        "semi_minor": 60.57,
+        "angle_deg": 173.08,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 611.03,
+        "center_y": 564.22,
+        "semi_major": 277.26,
+        "semi_minor": 277.26,
+        "angle_deg": 0.0,
+        "boundary_points": []
+      }
+    }
+  },
+  "frame_000266.jpg": {
+    "image_path": "clinical_data\\training_data\\images\\frame_000266.jpg",
+    "image_width": 1118,
+    "image_height": 1120,
+    "annotations": {
+      "PUPIL": {
+        "class_id": 1,
+        "center_x": 594.7,
+        "center_y": 571.82,
+        "semi_major": 65.83,
+        "semi_minor": 55.99,
+        "angle_deg": 1.25,
+        "boundary_points": []
+      },
+      "LIMBUS": {
+        "class_id": 2,
+        "center_x": 611.71,
+        "center_y": 563.09,
+        "semi_major": 279.06,
+        "semi_minor": 274.31,
+        "angle_deg": 17.09,
+        "boundary_points": []
+      }
+    }
+  }
+}

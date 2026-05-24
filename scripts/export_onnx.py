@@ -20,7 +20,7 @@ logger = logging.getLogger("export")
 
 
 def export(model_path: str, resolution: int = 320, output_path: str = None, verify: bool = False):
-    from ml.architecture import EyeSegmentationModel
+    from pupil_tracking.ml.architecture import EyeSegmentationModel
 
     if output_path is None:
         base = os.path.splitext(model_path)[0]

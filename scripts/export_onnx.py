@@ -31,9 +31,8 @@ def export(model_path: str, resolution: int = 320, output_path: str = None, veri
     config = checkpoint.get("config", {})
 
     model = EyeSegmentationModel(
-        encoder_name=config.get("encoder_name", "resnet34"),
+        encoder=config.get("encoder_name", "resnet34"),
         num_classes=config.get("num_classes", 3),
-        input_size=config.get("input_size", 512),
     )
     model.load_state_dict(checkpoint["model_state_dict"])
     model.eval()
